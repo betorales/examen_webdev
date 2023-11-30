@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+  <div class="container-ex1">
+      <h1>CÁLCULO DE COMPRAS</h1>
+      <form action="/ejercicio-1" method="POST">
+          <label for="name">Ingresa tu nombre</label> <br/>
+          <input type="text" id="name" name="name" value="{{ name_user |safe}}" /> <br/>
+          <label for="age">Ingresa tu edad</label> <br/>
+          <input type="text" id="age" name="age" value="{{ age_user |safe}}" /> <br/>
+          <label for="paint">Ingresa la cantidad de tarros de pintura a comprar</label> <br/>
+          <input type="text" id="paint" name="paint" value="{{ paint_buckets |safe}}" /> <br/>
+          <div class="show-data">
+              <p>{{ user_msg }}</p>
+              <p>{{ total_price_msg }}</p>
+              <p>{{ discount_price_msg }}</p>
+              <p>{{ total_price_discount_msg }}</p>
+          </div>
+          <button type="submit">Calcular</button>
+      </form>
+  </div>
+
+</body>
+</html>

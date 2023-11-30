@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+a:visited{
+    color: inherit;
+}
+
+.container{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+    height: 30vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    color: white;
+    align-items: center;
+}
+
+.ex1, .ex2{
+    margin: 20px;
+    padding: 50px;
+    text-align: center;
+}
+
+.ex1{
+    background-color: rgb(152, 198, 69);
+}
+
+.ex2{
+    background-color: rgb(161, 37, 170);
+}
+
+.container-ex1, .container-ex2{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    border: 1px solid black;
+    text-align: center;
+}
+
+input[type="text"], input[type="password"]{
+    width: 300px;
+    height: 25px;
+    font-size: 18px;
+}
+
+form{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label{
+    font-size: 20px;
+}
+
+button{
+    height: 40px;
+    width: 80px;
+    margin-top: 10px;
+    background-color: rgb(12, 97, 254);
+    color: white;
+    font-size: 16px;
+}
+
+.show-data{
+    margin-top: 10px;
+}
